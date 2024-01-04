@@ -1,0 +1,111 @@
+body {
+    background-color: #1a1a1a;
+    color: #ffffff;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    font-size: 3em;
+    margin-bottom: 20px;
+}
+
+p {
+    font-size: 1.2em;
+    margin-bottom: 40px;
+}
+
+.login-button {
+    background: linear-gradient(to right, #db34d3, #460129);
+    color: #ffffff;
+    padding: 15px 30px;
+    font-size: 1.2em;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background 0.3s ease;
+    width: 300px;
+}
+
+.login-button:hover {
+    background: linear-gradient(to right, #460129, #db34d3);
+}
+.animated-404 {
+    font-size: 10em;
+    margin-bottom: 20px;
+    animation: shake 0.5s ease-in-out infinite;
+}
+
+@keyframes shake {
+    0%, 100% {
+        transform: translateX(0);
+    }
+    25%, 75% {
+        transform: translateX(-20px);
+    }
+    50% {
+        transform: translateX(20px);
+    }
+}
+form {
+    margin-bottom: 40px;
+}
+
+label {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+input {
+    padding: 10px;
+    font-size: 1em;
+    width: 300px;
+    margin-bottom: 20px;
+    border: 1px solid #ffffff;
+    border-radius: 5px;
+    background-color: #1a1a1a;
+    color: #ffffff;
+}
+
+section {
+    background-color: #2c3e50;
+    border-radius: 5px;
+    border: 2px solid #34495e;
+    margin-bottom: 20px;
+    padding: 20px;
+    width: 80%;
+    max-width: 800px;
+    box-sizing: border-box;
+}
+
+h2 {
+    color: #ffffff;
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+table, th, td {
+    border: 1px solid #34495e;
+    color: #ffffff;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+}
+
+#chart-container,
+#graph-container {
+    margin-top: 10px;
+}
