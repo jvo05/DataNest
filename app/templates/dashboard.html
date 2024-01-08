@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Database Hosting Dashboard</title>
+    <!-- Füge Plotly-Abhängigkeiten hinzu -->
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+</head>
+<body>
+    <h1>Database Hosting Dashboard</h1>
+
+    <div>
+        <h2>Statistics:</h2>
+        <ul>
+            <li>Total Users: {{ stats.total_users }}</li>
+            <li>Active Users: {{ stats.active_users }}</li>
+            <li>Total Databases: {{ stats.total_databases }}</li>
+            <li>Used Storage: {{ stats.used_storage }} GB</li>
+            <!-- Füge weitere relevante Statistiken hier ein -->
+        </ul>
+    </div>
+
+    <!-- Füge den Plotly-3D-Torten-Chart ein -->
+    <div>
+        <h2>3D Pie Chart:</h2>
+        <div id="pie-chart">{{ pie_chart|safe }}</div>
+    </div>
+</body>
+</html>
